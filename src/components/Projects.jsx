@@ -10,56 +10,53 @@ const Projects = () => {
         "Admins (owners) can add new books to the catalog and update book prices through a built-in interface.",
         "Book and customer data are stored using plain text files with read/write operations handled via Java I/O."
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["Java", "JavaFX"],
       image: "/Project.svg",
-      githubLink: "https://github.com/yourusername/bookstore-app"
+      githubLink: "https://github.com/dylanccli/Bookstore-App"
     },
     {
-      title: "Machine Learning Model",
+      title: "Valorant Tracker Database Application",
       description: [
-        "Predictive model for stock market trends",
-        "Uses historical market data",
-        "Implemented with TensorFlow",
-        "Achieved 85% prediction accuracy"
+        "Developed a Java-based console application for tracking Valorant players, teams, coaches, weapons, and matches using SQLite",
+        "Built a menu-driven CRUD system enabling users to view, add, and query entities such as players, teams, and match records",
+        "Implemented advanced SQL queries (e.g., top-earning player, team with most wins, most damaging weapon) using JDBC and prepared statements",
       ],
-      technologies: ["Python", "TensorFlow", "Pandas", "NumPy"],
-      image: "/project2.jpg",
+      technologies: ["Java", "SQLite"],
+      image: "/Project2.svg",
       githubLink: "https://github.com/yourusername/ml-stock-predictor"
     },
     {
-      title: "Portfolio Website",
+      title: "BlackJack Card Game",
       description: [
-        "Responsive personal portfolio",
-        "Modern UI with animations",
-        "Showcases projects and skills",
-        "Optimized for performance"
+        "Built a Java-based console Blackjack game simulating classic card game mechanics between player and dealer",
+        "Implemented core game logic including card dealing, shuffling, scoring (with Ace rules), and win/loss conditions",
+        "Designed with Object-Oriented Programming, using classes for cards, card piles (deck/hands), and game logic",
+        "Created a modular UI layer to handle player interaction (hit/stand) and real-time game updates via console"
       ],
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      image: "/project3.jpg",
+      technologies: ["Java"],
+      image: "Project3.svg",
       githubLink: "https://github.com/yourusername/portfolio-website"
     },
     {
-      title: "Task Management App",
+      title: "Personal Portfolio",
       description: [
-        "Collaborative task management",
-        "Real-time updates with WebSockets",
-        "Drag-and-drop interface",
-        "User roles and permissions"
+        "A modern React-based portfolio showcasing my skills, projects, and background",
+        "Uses Tailwind CSS for sleek styling with a dark theme and accent colors",
       ],
-      technologies: ["React", "Firebase", "Material UI"],
-      image: "/project4.jpg",
-      githubLink: "https://github.com/yourusername/task-manager"
+      technologies: ["React", "JavaScript", "Tailwindcss"],
+      image: "/Project4.svg",
+      githubLink: "https://github.com/dylanccli/Personal-Portfolio-2"
     },
     {
-      title: "Weather Dashboard",
+      title: "Flight Management System",
       description: [
-        "Current and forecasted weather data",
-        "Location-based services",
-        "Interactive charts",
-        "Mobile-responsive design"
+        "Built a Java-based flight management system to handle flight schedules, passenger data, and ticketing operations",
+        "Designed a passenger classification system distinguishing between members and non-members with unique attributes",
+        "Implemented a ticketing mechanism to associate passengers with specific flights and manage bookings",
+        "Applied OOP principles such as inheritance and encapsulation to structure core classes like Passenger, Flight, and Ticket"
       ],
-      technologies: ["JavaScript", "OpenWeather API", "Chart.js"],
-      image: "/project5.jpg",
+      technologies: ["Java"],
+      image: "/Project5.svg",
       githubLink: "https://github.com/yourusername/weather-dashboard"
     },
     {
