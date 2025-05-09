@@ -41,7 +41,7 @@ const Projects = () => {
       title: "Personal Portfolio",
       description: [
         "A modern React-based portfolio showcasing my skills, projects, and background",
-        "Uses Tailwind CSS for sleek styling with a dark theme and accent colors",
+        "Uses Tailwind CSS for styling",
       ],
       technologies: ["React", "JavaScript", "Tailwindcss"],
       image: "/Project4.svg",
@@ -60,17 +60,53 @@ const Projects = () => {
       githubLink: "https://github.com/yourusername/weather-dashboard"
     },
     {
-      title: "Social Media Analytics",
+      title: "Secure ATM Banking System",
       description: [
-        "Dashboard for engagement metrics",
-        "Data visualization with D3.js",
-        "Custom reporting tools",
-        "Scheduled data exports"
+        "Developed a secure Python-based client-server ATM system with full banking functionality and advanced cryptographic protections",
+        "Implemented AES-256 encryption, HMAC-SHA256, and nonce-based replay attack prevention for secure communication",
+        "Built a three-way handshake key exchange protocol with time-stamped messages and session key derivation for mutual authentication",
+        "Designed a GUI with PySimpleGUI and included encrypted user registration, transaction handling, and admin dashboardss"
       ],
-      technologies: ["Python", "Django", "PostgreSQL", "D3.js"],
-      image: "/project6.jpg",
+      technologies: ["Python", "PyCryptodome", "PySimpleGUI"],
+      image: "/Project6.svg",
       githubLink: "https://github.com/yourusername/social-media-analytics"
-    }
+    },
+    {
+        title: "Body Gesture Sychronization Between Two People ",
+        description: [
+          "Text Goes Here",
+        ],
+        technologies: ["Python", "React", "Tailwindcss"],
+        image: "/Project7.svg",
+        githubLink: "https://github.com/AT1XX/syncs"
+    },
+    {
+        title: "Smart Parking System",
+        description: [
+          "Text Goes Here",
+        ],
+        technologies: ["Python", "React", "Tailwindcss"],
+        image: "/Project8.svg",
+        githubLink: "https://github.com/dylanccli/Smart-Parking-System"
+    },
+    {
+        title: "Sign Language Detection",
+        description: [
+          "Text Goes Here",
+        ],
+        technologies: ["Python", "React", "Tailwindcss"],
+        image: "/Project9.svg",
+        githubLink: "https://github.com/AT1XX/CV-ASL"
+    },
+    {
+        title: "NBA Sports Betting Analysis",
+        description: [
+          "Text Goes Here",
+        ],
+        technologies: ["Python", "React", "Tailwindcss"],
+        image: "/Project10.svg",
+        githubLink: "https://github.com/anthonythanpoovong/NBA-Sports-Betting-Analysis-App"
+    },
   ];
 
   const isSvg = (filename) => filename?.endsWith('.svg');
@@ -91,7 +127,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div 
               key={project.title}
-              className="bg-[#1b1b1b] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-[#ff014f]/20 transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
+              className="bg-[#1b1b1b] rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:shadow-[#ff014f]/20 transition-all duration-300 transform hover:scale-105 hover:z-10 flex flex-col relative"
             >
               {/* Image container */}
               <div className={`h-52 w-full ${isSvg(project.image) ? 'flex items-center justify-center p-6' : 'overflow-hidden relative'}`}>

@@ -32,39 +32,19 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, loopNum, currentTextIndex]);
 
-  const socialButtonClass = `
-  bg-gradient-to-br from-[#1b1b1b] to-[#0f0f0f]
-  hover:from-[#ff014f] hover:to-[#d40042]
-  border border-[#2a2a2a]
-  transition-all duration-300 
-  w-14 h-14 md:w-16 md:h-16 
-  rounded-lg
-  flex items-center justify-center
-  shadow-lg hover:shadow-xl hover:shadow-[#ff014f]/20
-  transform hover:-translate-y-1
-  group
-  `;
-
-  const socialIconClass = `
-  w-8 h-8 md:w-10 md:h-10
-  object-contain
-  group-hover:brightness-0 group-hover:invert
-  `;
-
-  // Social links data
   const socialLinks = [
     {
-      href: "https://www.instagram.com/dylanccli/#", // Update with your actual resume path
+      href: "https://www.instagram.com/dylanccli/#",
       icon: "/Instagram.svg",
       alt: "Instagram"
     },
     {
-      href: "https://www.linkedin.com/in/dylan-li-a949602b9/", // Update with your LinkedIn
+      href: "https://www.linkedin.com/in/dylan-li-a949602b9/",
       icon: "/LinkedIn.svg",
       alt: "LinkedIn"
     },
     {
-      href: "https://github.com/dylanccli", // Update with your GitHub
+      href: "https://github.com/dylanccli",
       icon: "/Github.svg",
       alt: "GitHub"
     }
@@ -90,24 +70,37 @@ const Home = () => {
             I'm a computer engineer, looking for new grad positions and exciting opportunities in the computer engineering world. I am learning new coding techniques that will help me in the future.
           </p>
           
-          {/* FIND ME section */}
+          {/* Social Links */}
           <div className="mt-10">
-            <p className="text-lg sm:text-lg text-[#c4cfde] font-small mb-6">
+            <p className="text-lg sm:text-lg text-[#c4cfde] font-small mb-4">
               FIND ME
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-5">
               {socialLinks.map((link, index) => (
                 <a 
                   key={index}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={socialButtonClass}
+                  className="
+                    bg-[#1b1b1b] rounded-xl overflow-hidden 
+                    shadow-lg hover:shadow-xl hover:shadow-[#ff014f]/20 
+                    transition-all duration-300 transform 
+                    hover:-translate-y-1 hover:scale-105 hover:z-10
+                    flex items-center justify-center
+                    p-4
+                    w-16 h-16
+                    group
+                  "
                 >
                   <img 
                     src={link.icon}
                     alt={link.alt}
-                    className={socialIconClass}
+                    className="
+                      w-9 h-9 object-contain
+                      group-hover:brightness-0 group-hover:invert
+                      transition-all duration-300
+                    "
                   />
                 </a>
               ))}
