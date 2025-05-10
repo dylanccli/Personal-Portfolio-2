@@ -78,7 +78,7 @@ const Projects = () => {
         ],
         technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "firebase Realtime Database"],
         image: "/Project7.svg",
-        githubLink: "https://github.com/AT1XX/syncs"
+        githubLink: "https://github.com/AT1XX/sync"
     },
     {
         title: "Smart Parking System",
