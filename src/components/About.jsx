@@ -44,7 +44,7 @@ const About = () => {
               </p>
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-2">
                 My coding journey began in 10th grade when I took my first introductory programming course and built a simple snake game. 
-                The following year, I explored robotics using NXT kits, where I programmed a robot to detect color changes and to avoid falling off the table. Since then, 
+                The following year, I explored robotics using NXT kits, where I programmed a robot to detect color changes to avoid falling off the table. Since then, 
                 I’ve completed several full-stack projects using a variety of programming languages and tools. 
                 Most recently, I worked on a project focused on body gesture detection and calculated synchronization between two people chatting.
               </p>
