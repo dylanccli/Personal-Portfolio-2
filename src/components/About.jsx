@@ -27,20 +27,27 @@ const About = () => {
             <div className="bg-[#1e2023] p-6 sm:p-8 rounded-xl border border-[#2a2d32]">
               <p className="text-base sm:text-lg text-gray-300 mb-4 leading-relaxed">
                   Hello, my name is <span className="text-[#ff014f]">Dylan Li</span>, and I graduated from <span className="text-[#ff014f]"> Toronto Metropolitan University </span> in May 2025, with a degree in Computer Engineering.
-              </p>
-              <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
                   I'm 23 years old, born on January 26, 2002. I'm Hakka Chinese, and I was born and raised in <span className="text-[#ff014f]"> Toronto, Ontario</span>.
               </p>
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-2">
                   Here are a few hobbies I enjoy:
               </p>
-              <ul className="list-disc list-inside text-base sm:text-lg text-gray-300 space-y-1">
+              <ul className="list-disc list-inside text-base sm:text-lg text-gray-300 space-y-1 mb-2">
                   <li>Playing Sports</li>
                   <li>Weight Lifting</li>
                   <li>Playing Video Games</li>
                   <li>Travelling</li>
                   <li>Trying New Food</li>
               </ul>
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-2">
+                A little bit about my coding journey...
+              </p>
+              <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-2">
+                My coding journey began in 10th grade when I took my first introductory programming course and built a simple snake game. 
+                The following year, I explored robotics using NXT kits, where I programmed a robot to detect color changes and to avoid falling off the table. Since then, 
+                I’ve completed several full-stack projects using a variety of programming languages and tools. 
+                Most recently, I worked on a project focused on body gesture detection and calculated synchronization between two people chatting.
+              </p>
             </div>
           </div>
           
