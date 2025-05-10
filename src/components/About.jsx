@@ -47,7 +47,7 @@ const About = () => {
           {/* Skills and Tools section */}
           <div className="space-y-6">
             {/* Skills box - matching contact form */}
-            <div className="bg-[#1b1b1b] p-6 sm:p-8 rounded-xl shadow-lg">
+            <div className="bg-[#1b1b1b] p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
               <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-[#c4cfde]">
                 My Skills
               </h3>
@@ -62,7 +62,7 @@ const About = () => {
             </div>
             
             {/* Tools box - matching contact form */}
-            <div className="bg-[#1b1b1b] p-6 sm:p-8 rounded-xl shadow-lg">
+            <div className="bg-[#1b1b1b] p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
               <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-[#c4cfde]">
                 Tools
               </h3>
