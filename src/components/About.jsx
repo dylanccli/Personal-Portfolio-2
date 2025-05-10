@@ -46,14 +46,40 @@ const About = () => {
           
           {/* Skills and Tools section */}
           <div className="space-y-6">
-            {/* Skills box - matching contact form */}
-            <div className="bg-[#1b1b1b] p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-[#c4cfde]">
+            {/* Skills box */}
+            <div className="
+              bg-[#1b1b1b] p-6 sm:p-8 rounded-xl 
+              shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] 
+              transition-all duration-300
+              relative overflow-hidden
+              group
+            ">
+              {/* Fade overlay on hover */}
+              <div className="
+                absolute inset-0 bg-gradient-to-b from-transparent to-[#1b1b1b]/80
+                opacity-0 group-hover:opacity-100
+                transition-opacity duration-300
+                pointer-events-none
+              "></div>
+              
+              <h3 className="
+                text-xl sm:text-2xl font-semibold mb-6 text-[#c4cfde]
+                transform group-hover:-translate-y-1
+                transition-transform duration-300
+              ">
                 My Skills
               </h3>
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 {skills.map((skill) => (
-                  <div key={skill} className="flex items-center">
+                  <div 
+                    key={skill} 
+                    className="
+                      flex items-center
+                      transform group-hover:-translate-y-0.5
+                      transition-transform duration-300 hover:duration-150
+                      hover:text-[#ff014f]
+                    "
+                  >
                     <span className="w-2 h-2 bg-[#ff014f] rounded-full mr-3"></span>
                     <span className="text-base sm:text-lg text-gray-300">{skill}</span>
                   </div>
@@ -61,14 +87,40 @@ const About = () => {
               </div>
             </div>
             
-            {/* Tools box - matching contact form */}
-            <div className="bg-[#1b1b1b] p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-[#c4cfde]">
+            {/* Tools box */}
+            <div className="
+              bg-[#1b1b1b] p-6 sm:p-8 rounded-xl 
+              shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] 
+              transition-all duration-300
+              relative overflow-hidden
+              group
+            ">
+              {/* Fade overlay on hover */}
+              <div className="
+                absolute inset-0 bg-gradient-to-b from-transparent to-[#1b1b1b]/80
+                opacity-0 group-hover:opacity-100
+                transition-opacity duration-300
+                pointer-events-none
+              "></div>
+              
+              <h3 className="
+                text-xl sm:text-2xl font-semibold mb-6 text-[#c4cfde]
+                transform group-hover:-translate-y-1
+                transition-transform duration-300
+              ">
                 Tools
               </h3>
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 {tools.map((tool) => (
-                  <div key={tool} className="flex items-center">
+                  <div 
+                    key={tool} 
+                    className="
+                      flex items-center
+                      transform group-hover:-translate-y-0.5
+                      transition-transform duration-300 hover:duration-150
+                      hover:text-[#ff014f]
+                    "
+                  >
                     <span className="w-2 h-2 bg-[#ff014f] rounded-full mr-3"></span>
                     <span className="text-base sm:text-lg text-gray-300">{tool}</span>
                   </div>
