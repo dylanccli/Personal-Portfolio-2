@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState({ text: '', isError: false });
+
   const contactMethods = [
     {
       icon: "/Email.svg",
@@ -31,6 +36,29 @@ const Contact = () => {
       alt: "LinkedIn"
     }
   ];
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setMessage({ text: '', isError: false });
+
+    emailjs.sendForm(
+      'service_your_service_id', // Replace with your EmailJS service ID
+      'template_your_template_id', // Replace with your EmailJS template ID
+      form.current,
+      'your_public_key' // Replace with your EmailJS public key
+    )
+    .then((result) => {
+      setMessage({ text: 'Message sent successfully!', isError: false });
+      form.current.reset();
+    })
+    .catch((error) => {
+      setMessage({ text: 'Failed to send message. Please try again.', isError: true });
+    })
+    .finally(() => {
+      setIsLoading(false);
+    });
+  };
 
   return (
     <section id="contact" className="min-h-screen bg-[#212428] text-white px-4 sm:px-6">
@@ -120,7 +148,7 @@ const Contact = () => {
               Send Me a Message
             </h3>
             
-            <form className="space-y-6">
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -129,8 +157,10 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
+                    name="user_name"
                     className="w-full bg-[#212428] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#ff014f]"
                     placeholder="Enter your name"
+                    required
                   />
                 </div>
                 <div>
@@ -140,8 +170,10 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
+                    name="user_email"
                     className="w-full bg-[#212428] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#ff014f]"
                     placeholder="Enter your email"
+                    required
                   />
                 </div>
               </div>
@@ -153,8 +185,10 @@ const Contact = () => {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   className="w-full bg-[#212428] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#ff014f]"
                   placeholder="What's this about?"
+                  required
                 />
               </div>
               
@@ -164,17 +198,37 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="6"
                   className="w-full bg-[#212428] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#ff014f]"
                   placeholder="Write your message here..."
+                  required
                 ></textarea>
               </div>
+
+              {/* Status message */}
+              {message.text && (
+                <div className={`p-3 rounded-lg ${message.isError ? 'bg-red-900/30 text-red-300' : 'bg-green-900/30 text-green-300'}`}>
+                  {message.text}
+                </div>
+              )}
               
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#ff014f] to-[#ff014f]/90 text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg hover:shadow-[#ff014f]/30 transition-all duration-300"
+                disabled={isLoading}
+                className={`w-full bg-gradient-to-r from-[#ff014f] to-[#ff014f]/90 text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg hover:shadow-[#ff014f]/30 transition-all duration-300 flex items-center justify-center ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
               >
-                Send Message
+                {isLoading ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </>
+                ) : (
+                  'Send Message'
+                )}
               </button>
             </form>
           </div>
