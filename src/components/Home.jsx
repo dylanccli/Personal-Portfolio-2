@@ -67,7 +67,7 @@ const Home = () => {
             <span className="animate-pulse">|</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-[36rem]">
-            I'm a computer engineer, looking for new grad positions and exciting opportunities in the computer engineering world. I am learning new coding techniques that will help me in the future.
+            I'm a computer engineer, looking for new grad positions and exciting opportunities in the computer engineering world. I'm currently learning new coding techniques that will help me in the future.
           </p>
           
           {/* Social Links */}

@@ -89,7 +89,7 @@ const Projects = () => {
           "Simulated IoT-based occupancy monitoring using Python scripts that update parking spot statuses in real time via Firebase",
           "Deployed the system to Microsoft Azure using Docker containers for scalable, cloud-based hosting",
         ],
-        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "firebase Realtime Database", "Azure", "Docker"],
+        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "Firebase Realtime Database", "Azure", "Docker"],
         image: "/Project8.svg",
         githubLink: "https://github.com/dylanccli/Smart-Parking-System"
     },
