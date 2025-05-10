@@ -7,9 +7,9 @@ const Home = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   
-  const typingSpeed = 120;
+  const typingSpeed = 80;
   const deletingSpeed = 50;
-  const pauseDuration = 2000;
+  const pauseDuration = 2500;
 
   useEffect(() => {
     const handleTyping = () => {
