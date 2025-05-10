@@ -43,10 +43,10 @@ const Contact = () => {
     setMessage({ text: '', isError: false });
 
     emailjs.sendForm(
-      'service_your_service_id', // Replace with your EmailJS service ID
-      'template_your_template_id', // Replace with your EmailJS template ID
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.current,
-      'your_public_key' // Replace with your EmailJS public key
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then((result) => {
       setMessage({ text: 'Message sent successfully!', isError: false });
