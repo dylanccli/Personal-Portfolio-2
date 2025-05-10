@@ -65,7 +65,7 @@ const Projects = () => {
         "Developed a secure Python-based client-server ATM system with full banking functionality and advanced cryptographic protections",
         "Implemented AES-256 encryption, HMAC-SHA256, and nonce-based replay attack prevention for secure communication",
         "Built a three-way handshake key exchange protocol with time-stamped messages and session key derivation for mutual authentication",
-        "Designed a GUI with PySimpleGUI and included encrypted user registration, transaction handling, and admin dashboardss"
+        "Designed a GUI with PySimpleGUI and included encrypted user registration, transaction handling, and admin dashboards"
       ],
       technologies: ["Python", "PyCryptodome", "PySimpleGUI"],
       image: "/Project6.svg",
@@ -76,16 +76,20 @@ const Projects = () => {
         description: [
           "Text Goes Here",
         ],
-        technologies: ["Python", "React", "Tailwindcss"],
+        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "firebase Realtime Database"],
         image: "/Project7.svg",
         githubLink: "https://github.com/AT1XX/syncs"
     },
     {
         title: "Smart Parking System",
         description: [
-          "Text Goes Here",
+          "Built a full-stack smart parking application enabling real-time reservation, payment, and occupancy tracking using simulated IoT sensors",
+          "Implemented dynamic pricing using a Flask API that adjusts prices based on time of day, demand, and occupancy rates",
+          "Designed an interactive React frontend for users to view live parking availability, make reservations, and process payments",
+          "Simulated IoT-based occupancy monitoring using Python scripts that update parking spot statuses in real time via Firebase",
+          "Deployed the system to Microsoft Azure using Docker containers for scalable, cloud-based hosting",
         ],
-        technologies: ["Python", "React", "Tailwindcss"],
+        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "firebase Realtime Database", "Azure", "Docker"],
         image: "/Project8.svg",
         githubLink: "https://github.com/dylanccli/Smart-Parking-System"
     },
