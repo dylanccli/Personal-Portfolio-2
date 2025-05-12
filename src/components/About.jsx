@@ -22,7 +22,7 @@ const About = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-          {/* About text with matching background */}
+          {/* About text */}
           <div className="space-y-6">
             <div className="bg-[#1e2023] p-6 sm:p-8 rounded-xl border border-[#2a2d32]">
               <p className="text-base sm:text-lg text-gray-300 mb-4 leading-relaxed">
