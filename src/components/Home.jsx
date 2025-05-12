@@ -107,7 +107,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        {/*Personal Image - Needs Update*/}
         <div className="flex justify-center md:justify-end">
           <div className="w-full max-w-[500px] md:w-[120%] lg:w-[140%] aspect-[4/5] overflow-hidden rounded-lg md:rounded-xl shadow-xl">
             <img 
