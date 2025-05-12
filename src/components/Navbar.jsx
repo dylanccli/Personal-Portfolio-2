@@ -56,7 +56,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu - With fade animation */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden fixed top-16 left-0 right-0 bg-[#1b1b1b] py-4 px-6 border-b border-[#2a2d32] shadow-lg animate-fadeIn">
           <div className="max-w-7xl mx-auto">
@@ -103,17 +103,6 @@ const Navbar = () => {
           </div>
         </div>
       )}
-
-      {/* Add this to your global CSS */}
-      <style jsx>{`
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out forwards;
-        }
-      `}</style>
     </nav>
   );
 };
