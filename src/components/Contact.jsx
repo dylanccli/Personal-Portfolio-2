@@ -72,7 +72,7 @@ const Contact = () => {
         </h2>
         
         <div className="grid md:grid-cols-5 gap-8 md:gap-12">
-          {/* Contact information with subtle background */}
+          {/* Contact information */}
           <div className="md:col-span-2 bg-[#1e2023] p-6 rounded-xl border border-[#2a2d32]">
             <h3 className="text-2xl sm:text-3xl font-semibold mb-6 text-[#c4cfde]">
               Contact Information
@@ -142,7 +142,7 @@ const Contact = () => {
             </div>
           </div>
           
-          {/* Contact form - with subtle white glow */}
+          {/* Contact form */}
           <div className="md:col-span-3 bg-[#1b1b1b] p-8 rounded-xl shadow-lg hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
             <h3 className="text-2xl sm:text-3xl font-semibold mb-6 text-[#c4cfde]">
               Send Me a Message
