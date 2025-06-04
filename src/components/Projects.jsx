@@ -35,7 +35,7 @@ const Projects = () => {
       ],
       technologies: ["Java"],
       image: "Project3.svg",
-      githubLink: "https://github.com/yourusername/portfolio-website"
+      githubLink: "https://github.com/dylanccli/blackjack-game"
     },
     {
       title: "Personal Portfolio",
@@ -69,7 +69,7 @@ const Projects = () => {
       ],
       technologies: ["Python", "PyCryptodome", "PySimpleGUI"],
       image: "/Project6.svg",
-      githubLink: "https://github.com/yourusername/social-media-analytics"
+      githubLink: "https://github.com/ryan1le/secure_banking_system"
     },
     {
         title: "Body Gesture Sychronization Between Two People ",
@@ -78,7 +78,7 @@ const Projects = () => {
         ],
         technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "firebase Realtime Database"],
         image: "/Project7.svg",
-        githubLink: "https://github.com/AT1XX/sync"
+        githubLink: "https://github.com/dylanccli/Body-Gesture-Detection-and-Synchronization-between-two-people-chatting"
     },
     {
         title: "Smart Parking System",
