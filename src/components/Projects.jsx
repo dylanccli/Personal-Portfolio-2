@@ -23,7 +23,7 @@ const Projects = () => {
       ],
       technologies: ["Java", "SQLite"],
       image: "/Project2.svg",
-      githubLink: "https://github.com/yourusername/ml-stock-predictor"
+      githubLink: "https://github.com/dylanccli/Valorant-Stat-Tracker"
     },
     {
       title: "BlackJack Card Game",
@@ -74,9 +74,13 @@ const Projects = () => {
     {
         title: "Body Gesture Sychronization Between Two People ",
         description: [
-          "Text Goes Here",
+          "A program that analyzes real-time video feeds from two individuals to measure synchronization use pose and facial landmark tracking",
+          "Processes simultaneous video streams with thread-safe buffers to ensure real-time performance for both participants",
+          "Integrates machine learning using a tensorflow model to classify engagements states, while using MediaPipe to extract facial and body landmarks for analysis",
+          "The synchronization algorithms compares 3D body landmakrs and adjusts scores based on the behavioral states of each of the individuals",
+          "The UI displays live video of both client and therapist while providing real-time sync scores, and performance graphs for immediate feedback",
         ],
-        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "firebase Realtime Database"],
+        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "Tensorflow", "Keras", "MediaPipe", "OpenCV"],
         image: "/Project7.svg",
         githubLink: "https://github.com/dylanccli/Body-Gesture-Detection-and-Synchronization-between-two-people-chatting"
     },
@@ -89,7 +93,7 @@ const Projects = () => {
           "Simulated IoT-based occupancy monitoring using Python scripts that update parking spot statuses in real time via Firebase",
           "Deployed the system to Microsoft Azure using Docker containers for scalable, cloud-based hosting",
         ],
-        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "Firebase Realtime Database", "Azure", "Docker"],
+        technologies: ["Python", "React", "Tailwindcss", "Flask", "TypeScript", "Firebase Realtime Database", "Azure", "Docker",],
         image: "/Project8.svg",
         githubLink: "https://github.com/dylanccli/Smart-Parking-System"
     },
