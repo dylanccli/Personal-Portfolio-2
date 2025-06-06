@@ -74,7 +74,7 @@ const Projects = () => {
     {
         title: "Body Gesture Sychronization Between Two People ",
         description: [
-          "A program that analyzes real-time video feeds from two individuals to measure synchronization use pose and facial landmark tracking",
+          "A program that analyzes real-time video feeds from two individuals to measure synchronization using pose and facial landmark tracking",
           "Processes simultaneous video streams with thread-safe buffers to ensure real-time performance for both participants",
           "Integrates machine learning using a tensorflow model to classify engagements states, while using MediaPipe to extract facial and body landmarks for analysis",
           "The synchronization algorithms compares 3D body landmakrs and adjusts scores based on the behavioral states of each of the individuals",
